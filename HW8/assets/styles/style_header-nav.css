@@ -1,0 +1,112 @@
+
+html{
+    scroll-behavior: smooth;
+    font-size: 14px;
+    z-index: 1;
+ }
+ .container {
+    max-width: 1400px;
+    margin: 0 auto;
+ } 
+nav{
+    width: 100%;
+    background-color: black;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    position: fixed;
+    z-index: 999;
+    min-width: 270px;
+}
+.nav__body {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__logo {
+    font-family: "Open Sans";
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.85rem;
+    font-weight: 800;
+}
+.logo-link__nav:hover{
+    background-color: none;
+}
+.ending-logo {
+    color: #ff9b51;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+}
+.nav__bar {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.nav-bar__list {
+    display: flex;
+}
+.nav-bar__line {
+    margin-left: 40px;
+}
+.nav-bar__link {
+    opacity: 0.69;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    box-shadow: inset 1px 1px 10px -1px;
+  }
+@media screen and (max-width: 660px){
+    .nav-bar__line{
+        margin-left: 10px;
+        
+    }
+}
+@media screen and (max-width: 480px){
+    .nav-bar__line{
+        margin-left: 0px;
+        border-right: 2px solid white;
+        padding-right: 5px;
+        margin-right: 5px;
+    }
+    .nav__body{
+        width: 95%;
+    }
+    .nav-bar__line:nth-child(5){
+        border-right: none;
+    }
+}
+@media screen and (max-width: 370px){
+    .nav-bar__line{
+        padding-right: 5px;
+        margin-right: 5px;
+        border-right: none;
+        border-right: 2px solid white;
+    }
+    .nav__body{
+        width: 95%;
+    }
+    .nav__body{ 
+        display: block;
+    }
+    .nav-bar__line{
+        margin-top: 10px;
+    }
+    .nav__logo{
+        text-align: center;
+    }
+    .nav__bar{
+        justify-content: center;
+    }
+    .features__info,.features__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}

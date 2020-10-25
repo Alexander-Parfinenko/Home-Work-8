@@ -1,0 +1,54 @@
+
+ .download {
+    width: 100%;
+    background-image: url(/assets/Image/background/bac-download.png);
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    display: block;
+    padding-top: 74px;
+    padding-bottom: 74px;
+}
+.download__body {
+   height: 100%;
+   width: 80%;
+   margin: 0 auto;
+}
+.download__title {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+.download__title::after{
+    content: ' ';
+    width: 60px;
+    border-bottom: 2px solid white;
+    margin: 26px auto 0 auto ;
+    display: block;
+}
+.download__subtitle {
+    text-align: center;
+    margin: 23px auto 33px auto;
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.download-bottan__link {  
+    display: flex;
+    width: 133px;
+    height: 39px;
+    text-decoration: none;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 1rem;
+    font-weight: 400;
+    margin: auto; 
+}
+

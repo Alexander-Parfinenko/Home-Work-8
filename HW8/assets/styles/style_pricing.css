@@ -1,0 +1,135 @@
+.pricing {
+    
+    height: 100%;
+    background-color: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.pricing__body{
+    width: 80%;
+    margin: 0 auto; 
+}
+.pricing__title {
+    font-family: "Raleway";
+    font-size: 2.6rem;
+    line-height: 43px;
+    font-weight: 400;
+    color: #212121;
+    text-align: center;
+}
+.pricing__title::after{
+    content: "";
+    width: 60px;
+    border-bottom: 2px solid orange;
+    display: block;
+    margin: 30px auto;
+}
+.pricing__subtitle {
+    font-family: "Open Sans";
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: 400;
+    color: #86878b;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.pricing__row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pricing__card {
+    width: 31%;
+}
+.head-card__pricing {
+    background-color: #333333;
+}
+
+.head-line__pricing:nth-child(1){
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 2px solid white;
+}
+.head-line__pricing:nth-child(2){
+    
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    line-height: 24px;
+    padding-bottom: 40px;
+    
+}
+.head-line__pricing:nth-child(3){
+    opacity: 0.5;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.dollar {
+    font-family: "Raleway";
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff; 
+}
+.number {
+    font-family: "Raleway";
+    font-size: 6.7rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.body-line__pricng {
+    font-family:"Open Sans";
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #86878b;
+    text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+    background-color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+}
+.body-line__pricng:nth-child(1){
+    border-top: 5px solid orange;
+}
+.orange-line__pricing {
+    background-color: orange;
+    color: white;
+    border-bottom: none;
+}
+@media screen and (max-width: 750px){
+    .pricing__body{
+        width: 95%;
+    }
+    .pricing{
+        padding: 10px 0 10px 0;
+    }
+    .pricing__subtitle{
+        margin: 0 auto 20px auto;
+    }
+    .card1,.card3{
+        order: 1;
+    }
+    .card2{
+        order: 2;
+        padding-top: 10px;
+    }
+    .pricing__card{
+        width: 45%;
+        flex-wrap: wrap;
+    }
+}
